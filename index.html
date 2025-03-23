@@ -3,7 +3,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Control Junaeb 2025</title>
+  <title>Control Junaeb DEMO</title>
   <script src="https://unpkg.com/html5-qrcode"></script>
   <style>
     body {
@@ -36,12 +36,12 @@
   </style>
 </head>
 <body>
-  <h1>Control Junaeb 2025</h1>
+  <h1>Control Junaeb DEMO</h1>
   <div id="reader"></div>
   <div id="status" class="status"></div>
 
   <script>
-    const formURL = "https://docs.google.com/forms/d/e/1FAIpQLSf6NBNDuzj0CRbN2wvXeXMfzzDYcMWvLacGv-fKXwD4y6Qwcg/formResponse";
+    const formURL = "https://docs.google.com/forms/d/e/1FAIpQLSfIfwPSqkn8EvDYahhDklvD1zPfHSGW7NmbpocGgz8yq-Nb5Q/formResponse";
 
     function showStatus(message, type) {
       const statusDiv = document.getElementById("status");
@@ -63,11 +63,11 @@
       const [_, id, nombre, curso] = match;
 
       const formData = new FormData();
-      formData.append("entry.1261391296", fecha);
-      formData.append("entry.1134465032", hora);
-      formData.append("entry.2070655154", id);
-      formData.append("entry.1456140255", nombre);
-      formData.append("entry.963804126", curso);
+      formData.append("entry.1163340952", fecha);
+      formData.append("entry.1027647697", hora);
+      formData.append("entry.2017571707", id);
+      formData.append("entry.1242903385", nombre);
+      formData.append("entry.893489806", curso);
 
       fetch(formURL, {
         method: "POST",
